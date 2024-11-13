@@ -31,7 +31,7 @@
 
         <div class="First-Function">
             <a href="Login.html" class="button">Login</a>
-            <a href="Register.html" class="button">Register</a>
+            <a asp-controller="account" asp-action="Register" class="button">Register</a>
             <a href="appointment.html" class="button">Appointment</a>
             <a href="#" class="button">Contact</a>
         </div>
@@ -69,7 +69,7 @@
         <a class="MainButton MainHome" href="#">HOME </a>
 
 
-        <a class="MainButton Mainabout" href="about.html">ABOUT</a>
+        <a class="MainButton Mainabout" asp-controller="home" asp-action="about">ABOUT</a>
         <a class="MainButton MainServices" href="">SERVICES</a>
         <a class="MainButton MainDoctors" href="Doctors.html">DOCTORS</a>
         <a class="MainButton MainAppoint" href="appointment.html">APPOINTMENT</a>
