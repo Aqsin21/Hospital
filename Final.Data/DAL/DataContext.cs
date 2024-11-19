@@ -1,4 +1,5 @@
 ﻿using Final.Core.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Win32;
 using System;
@@ -9,12 +10,13 @@ using System.Threading.Tasks;
 
 namespace Final.Data.DAL
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
-        public DbSet<Register> Users { get; set; }
+        public DbSet<AppUser> Users { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
 
     }
 }

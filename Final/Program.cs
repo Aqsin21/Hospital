@@ -1,4 +1,10 @@
+using Final.Business.Services.Abstarct;
+using Final.Business.Services.Concretes;
+using Final.Core.Models;
+using Final.Core.RepositoryAbstract;
 using Final.Data.DAL;
+using Final.Data.RepositoryConcretes;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Final
@@ -9,16 +15,27 @@ namespace Final
         {
             var builder = WebApplication.CreateBuilder(args);
 
-          
+
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<DataContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+            builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
+            {
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.User.RequireUniqueEmail = false;
+            }).AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
+            builder.Services.AddScoped<IDoctorService, DoctorService>();
 
+            builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
             var app = builder.Build();
 
-            
+
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
@@ -26,16 +43,18 @@ namespace Final
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
+            app.MapControllerRoute(
+                name: "areas",
+                pattern: "{area:exists}/{controller=dashboard}/{action=index}/{id?}"
+            );
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=home}/{action=index}/{id?}"
+                );
 
             app.Run();
         }
