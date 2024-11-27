@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.InteropServices.Marshalling;
 
 namespace Final.Core.Models
 {
@@ -16,13 +17,14 @@ namespace Final.Core.Models
         public int FullName { get; set; }
 
         [Required]
-        public string Experience { get; set; }
+        public string? Experience { get; set; }
         [Required]
-        [StringLength (300)]
-        public string Description { get; set; }
+        [StringLength(300)]
+        public string Description { get; set; } =  "Unknown";
         [StringLength(50)]
         public string? ImageUrl { get; set; }
         [NotMapped]
         public IFormFile? ImageFile { get; set; }
+
     }
 }
