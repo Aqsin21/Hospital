@@ -14,13 +14,13 @@ namespace Final.Core.Models
     {
         [Required]
         [StringLength(50)]
-        public int FullName { get; set; }
+        public string FullName { get; set; }
 
         [Required]
         public string? Experience { get; set; }
         [Required]
         [StringLength(300)]
-        public string Description { get; set; } =  "Unknown";
+        public string Description { get; set; }
         [StringLength(50)]
         public string? ImageUrl { get; set; }
         [NotMapped]
