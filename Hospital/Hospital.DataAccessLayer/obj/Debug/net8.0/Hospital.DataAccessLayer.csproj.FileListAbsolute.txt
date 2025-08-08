@@ -1,0 +1,11 @@
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\bin\Debug\net8.0\Hospital.DataAccessLayer.deps.json
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\bin\Debug\net8.0\Hospital.DataAccessLayer.dll
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\bin\Debug\net8.0\Hospital.DataAccessLayer.pdb
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.AssemblyInfo.cs
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.dll
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\refint\Hospital.DataAccessLayer.dll
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.pdb
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\ref\Hospital.DataAccessLayer.dll
