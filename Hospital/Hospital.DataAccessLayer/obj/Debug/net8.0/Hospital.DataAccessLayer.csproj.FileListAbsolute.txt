@@ -9,3 +9,7 @@ C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\
 C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\refint\Hospital.DataAccessLayer.dll
 C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.pdb
 C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\ref\Hospital.DataAccessLayer.dll
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\bin\Debug\net8.0\Hospital.DataAccessLayer.runtimeconfig.json
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.sourcelink.json
+C:\Users\HP\Desktop\Hospital\Hospital\Hospital.DataAccessLayer\obj\Debug\net8.0\Hospital.DataAccessLayer.genruntimeconfig.cache

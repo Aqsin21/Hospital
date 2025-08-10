@@ -1,6 +1,6 @@
 ﻿namespace Hospital.DataAccessLayer.DataContext.Entities
 {
-    public class Doctor
+    public class Doctor:BaseEntity
     {
         public required string FullName { get; set; }
         public int DepatmentId { get; set; }
