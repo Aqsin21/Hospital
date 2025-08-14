@@ -1,8 +1,9 @@
 ﻿using Hospital.DataAccessLayer.DataContext.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace Hospital.DataAccessLayer.DataContext
 {
-    public class AppDbContext :DbContext
+    public class AppDbContext :IdentityDbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
         {
@@ -13,6 +14,7 @@ namespace Hospital.DataAccessLayer.DataContext
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Blog > Blogs { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
 
 
 
